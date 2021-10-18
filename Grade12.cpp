@@ -1,21 +1,20 @@
 #include <iostream>
-#include <cmath>
 #include "Grade12.h"
 
 using namespace std;
 
 bool Grade12(double arr[3]) {
-    int firstnum = arr[0];
-    int secondnum = arr[1];
-    int casenum = arr[2];
-    int ans, userans;
+    int firstNum = arr[0];
+    int secondNum = arr[1];
+    int caseNum = arr[2];
+    int ans, useRes;
 
-    if (casenum == 0) {
-        ans = firstnum + secondnum;
-        cout << firstnum << " + " << secondnum << " = ?" << endl;
-        cin >> userans;
+    if (caseNum == 0) {
+        ans = firstNum + secondNum;
+        cout << firstNum << " + " << secondNum << " = ?" << endl;
+        cin >> useRes;
 
-        if (ans == userans) {
+        if (ans == useRes) {
             return true;
         } else {
             return false;
@@ -23,12 +22,12 @@ bool Grade12(double arr[3]) {
 
     }
 
-    if (casenum == 1) {
-        ans = firstnum - secondnum;
-        cout << firstnum << " - " << secondnum << " = ?" << endl;
-        cin >> userans;
+    if (caseNum == 1) {
+        ans = firstNum - secondNum;
+        cout << firstNum << " - " << secondNum << " = ?" << endl;
+        cin >> useRes;
 
-        if (ans == userans) {
+        if (ans == useRes) {
             return true;
         } else {
             return false;
