@@ -38,7 +38,7 @@ int main() {
     if (score == repeat) {
         cout << "All right, that's great!";
     } else {
-        cout << "Wrong question";
+        cout << "Wrong question!";
     }
     cout << "Your score is " << score << endl;
     return 0;

@@ -11,21 +11,21 @@ bool Grade34(double arr[3]) {
     switch (caseNum) {
         case 0:
             result = firstNum + secondNum;
-            cout << firstNum << " + " << secondNum << " =　?" << endl;
+            cout << firstNum << " + " << secondNum << " = ?" << endl;
             break;
         case 1:
             result = firstNum - secondNum;
-            cout << firstNum << " - " << secondNum << " =　?" << endl;
+            cout << firstNum << " - " << secondNum << " = ?" << endl;
             break;
         case 2:
             result = firstNum * secondNum;
-            cout << firstNum << " * " << secondNum << " =　?" << endl;
+            cout << firstNum << " * " << secondNum << " = ?" << endl;
             break;
         case 3:
             result = firstNum / secondNum;
             int result1 = result * 100 + 0.5;
             result = result1 / 100.0;
-            cout << firstNum << " / " << secondNum << " =　?" << endl;
+            cout << firstNum << " / " << secondNum << " = ?" << endl;
             break;
     }
     cin >> userResult;

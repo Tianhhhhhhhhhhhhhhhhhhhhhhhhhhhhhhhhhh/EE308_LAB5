@@ -6,6 +6,7 @@ using namespace std;
 
 void getRandom(int grade, double arr[3]) {
     //定义默认随机数引擎
+    srand(time(NULL));
 
     if (grade == 1 || grade == 2) {
         arr[0] = rand() % 101;
