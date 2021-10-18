@@ -40,6 +40,6 @@ int main() {
     } else {
         cout << "Wrong question!";
     }
-    cout << "Your score is " << score << endl;
+    cout << "Your score is " << int(1.0 * score / repeat * 100) << endl;
     return 0;
 }
