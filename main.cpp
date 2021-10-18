@@ -7,12 +7,16 @@
 using namespace std;
 
 int main() {
-    int grade, repeat, score = 0;
+    int grade = 0, repeat = 0, score = 0;
     double question[3];
     cout << "Please enter your grade?" << endl;
     cin >> grade;
     cout << "Please enter the number of questions?" << endl;
     cin >> repeat;
+    if (repeat <= 0) {
+        cout << "Input correct number of questions!";
+        return -1;
+    }
     for (int i = 0; i < repeat; ++i) {
         switch (grade) {
             case 1:
@@ -32,6 +36,7 @@ int main() {
                 break;
             default:
                 cout << "Please input correct grade!" << endl;
+                return -1;
         }
     }
     cout << "End!";
