@@ -7,9 +7,9 @@ bool Grade56(double arr[3]) {
     int caseNum = arr[2];
 
     int num1 = arr[0] * 100;
-    double rNum1 = (double )num1 / 100.0;
+    double rNum1 = (double) num1 / 100.0;
     int num2 = arr[1] * 100;
-    double rNum2 = (double )num2 / 100.0;
+    double rNum2 = (double) num2 / 100.0;
     int ans;
     double result;
 
@@ -37,13 +37,9 @@ bool Grade56(double arr[3]) {
     }
 
     double input, solution;
-    cout << "please input your answer here:" << endl;
     cin >> input;
-    ans = input * 100;
-    solution = (double) ans / 100.0;
 
-
-    if (result == solution) {
+    if (abs(result - input) < 1e-5) {
         return true;
     } else {
         return false;
