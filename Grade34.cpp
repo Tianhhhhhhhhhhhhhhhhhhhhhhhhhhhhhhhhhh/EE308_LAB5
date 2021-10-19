@@ -9,7 +9,7 @@ bool Grade34(double arr[3]) { //接收到的array三位分别是随机出来的�
     double firstNum = arr[0];
     double secondNum = arr[1];
     double result, userResult; //正确的结果和用户输入的结果对比
-    switch (caseNum) {
+    switch (caseNum) { //case 0,1,2,3 分别对应加减乘除
         case 0:
             result = firstNum + secondNum;
             cout << firstNum << " + " << secondNum << " = ?" << endl;
@@ -29,11 +29,11 @@ bool Grade34(double arr[3]) { //接收到的array三位分别是随机出来的�
             cout << firstNum << " / " << secondNum << " = ?" << endl;
             break;
     }
-    cin >> userResult;
+    cin >> userResult; // 让用户输入答案
 
     if (userResult == result) {
-        return true;
+        return true; // 答案正确返回1
     } else {
-        return false;
+        return false; // 答案错误返回0
     }
 }
