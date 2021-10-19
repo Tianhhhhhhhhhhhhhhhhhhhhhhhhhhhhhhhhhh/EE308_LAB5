@@ -3,11 +3,12 @@
 
 using namespace std;
 
-bool Grade34(double arr[3]) {
+//此函数用来进行整数的加减乘除运算
+bool Grade34(double arr[3]) { //接收到的array三位分别是随机出来的两个数字和运算符号，0123对应加减乘除
     int caseNum = arr[2];
     double firstNum = arr[0];
     double secondNum = arr[1];
-    double result, userResult;
+    double result, userResult; //正确的结果和用户输入的结果对比
     switch (caseNum) {
         case 0:
             result = firstNum + secondNum;
@@ -24,7 +25,7 @@ bool Grade34(double arr[3]) {
         case 3:
             result = firstNum / secondNum;
             int result1 = result * 100 + 0.5;
-            result = result1 / 100.0;
+            result = result1 / 100.0;  // 取小数点后两位，并四舍五入
             cout << firstNum << " / " << secondNum << " = ?" << endl;
             break;
     }
