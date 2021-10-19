@@ -19,7 +19,6 @@ bool Grade12(double arr[3]) {
         } else {
             return false;
         }
-
     }
 
     if (caseNum == 1) {
